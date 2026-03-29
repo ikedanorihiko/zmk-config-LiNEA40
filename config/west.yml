@@ -8,6 +8,10 @@ manifest:
       url-base: https://github.com/kay-yokoyama
     - name: caksoylar
       url-base: https://github.com/caksoylar
+      
+    - name: prospector
+      url-base: https://github.com/t-ogura
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -28,3 +32,4 @@ manifest:
     
   self:
     path: config
+
