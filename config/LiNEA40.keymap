@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -141,7 +141,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RPAR>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -188,7 +188,7 @@
             //            >;
 
             bindings = <
-&kp EQUAL       &trans        &kp EXCLAMATION      &trans  &kp CARET                        &trans         &kp UNDERSCORE  &kp UP_ARROW     &trans         &kp PERCENT
+&kp EQUAL       &trans        &kp EXCLAMATION      &trans  &kp CARET                        &trans         &kp UNDERSCORE  &kp UP_ARROW     &kp_lp_rp      &kp PERCENT
 &kp AT          &kp SLASH     &kp DOLLAR           &trans  &trans                           &kp HASH       &kp LEFT_ARROW  &kp RIGHT_ARROW  &trans         &kp_semicolon_colon
 &kp LEFT_SHIFT  &kp ASTERISK  &kp_semicolon_colon  &trans  &kp BACKSLASH                    &kp AMPERSAND  &kp DOWN        &trans           &kp PAGE_UP    &kp RIGHT_SHIFT
 &trans          &trans        &trans               &trans  &trans         &trans    &trans  &kp LA(GRAVE)                  &kp HOME         &kp PAGE_DOWN  &kp END
