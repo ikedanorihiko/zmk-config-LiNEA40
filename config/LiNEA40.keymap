@@ -130,10 +130,10 @@
 //            >;
 
             bindings = <
-&kp Q          &kp W         &kp E               &kp R    &kp T                                      &kp Y        &kp U  &kp I                &kp O          &kp P
-&kp A          &kp S         &kp D               &kp F    &kp G                                      &kp H        &kp J  &kp K                &kp L          &lt 5 ENTER
-&kp Z          &kp X         &kp C               &kp V    &kp B                                      &kp N        &kp M  &kp COMMA            &kp DOT        &mt RIGHT_SHIFT BACKSPACE
-&mt LCTRL ESC  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 SPACE  &lt 2 F10    &lt 2 BACKSPACE  &lt 4 SPACE         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
+&kp Q          &kp W         &kp E               &kp R    &kp T                                      &kp Y        &kp U           &kp I                &kp O                &kp P
+&kp A          &kp S         &kp D               &kp F    &kp G                                      &kp H        &lt LEFT_ALT J  &lt LCTRL K          &lt LEFT_WIN L       &lt 5 ENTER
+&kp Z          &kp X         &kp C               &kp V    &kp B                                      &kp N        &kp M           &kp COMMA            &kp DOT              &mt RIGHT_SHIFT BACKSPACE
+&mt LCTRL ESC  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS  &lt 5 SPACE  &lt 2 F10    &lt 2 BACKSPACE  &lt 4 SPACE                  &lt 6 RIGHT_BRACKET  &kp BACKSLASH        &mt RIGHT_SHIFT SLASH
             >;
 
 
