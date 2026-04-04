@@ -163,9 +163,9 @@
 //            >;
 
             bindings = <
-&kp EQUAL                   &trans           &kp EXCLAMATION         &trans         &kp CARET                        &trans           &kp UNDERSCORE  &trans           &trans            &kp PERCENT
-&kp AT                      &kp SLASH        &kp DOLLAR              &trans         &trans                           &kp HASH         &trans          &trans           &trans            &kp SEMICOLON
-&trans                      &kp ASTERISK     &kp SEMICOLON           &trans         &kp BACKSLASH                    &kp AMPERSAND    &kp MINUS       &trans           &trans            &trans
+&kp EQUAL                   &trans           &kp EXCLAMATION         &trans         &kp CARET                        &trans           &kp UNDERSCORE  &kp UP_ARROW           &trans            &kp PERCENT
+&kp AT                      &kp SLASH        &kp DOLLAR              &trans         &trans                           &kp HASH         &kp LEFT_ARROW  &kp RIGHT_ARROW           &trans            &kp SEMICOLON
+&trans                      &kp ASTERISK     &kp SEMICOLON           &trans         &kp BACKSLASH                    &kp AMPERSAND    &kp DOWN        &trans           &trans            &trans
 &trans                      &trans           &trans                  &trans         &trans         &trans    &trans  &trans                           &trans           &trans            &trans  
             >;
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
