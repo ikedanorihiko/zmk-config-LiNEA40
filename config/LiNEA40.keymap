@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -122,6 +122,15 @@
             label = "tab_q";
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp Q>;
+
+            tapping-term-ms = <250>;
+        };
+
+        kp_semicolon_colon: kp_semicolon_colon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "kp_colon_behavior";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
 
             tapping-term-ms = <250>;
         };
