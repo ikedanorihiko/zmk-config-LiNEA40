@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -117,7 +117,7 @@
             tap-ms = <20>;
         };
 
-        kp_tab_q: kp_tab_q_behaivor {
+        kp_tab_q: tab_q {
             compatible = "zmk,behavior-tap-dance";
             label = "tab_q";
             #binding-cells = <0>;
@@ -137,7 +137,7 @@
 
         kp_lp_rp: lp_rp {
             compatible = "zmk,behavior-mod-morph";
-            label = "KP_LP_RP_behaivor";
+            label = "kp_lp_rp_behavior";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RPAR>;
 
             #binding-cells = <0>;
