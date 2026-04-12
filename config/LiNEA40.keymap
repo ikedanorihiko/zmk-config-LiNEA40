@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -155,7 +155,7 @@
 
         mod_morph_bs_p: mod_morph_bs_p_ {
             compatible = "zmk,behavior-mod-morph";
-            label = "mod_morph_p_bs";
+            label = "mod_morph_bs_p";
             bindings = <&kp BACKSPACE>, <&kp P>;
 
             #binding-cells = <0>;
@@ -164,7 +164,7 @@
 
         mod_morph_tab_q: mod_morph_tab_q_ {
             compatible = "zmk,behavior-mod-morph";
-            label = "mod_morph_tab";
+            label = "mod_morph_tab_q";
             bindings = <&kp TAB>, <&kp Q>;
 
             #binding-cells = <0>;
