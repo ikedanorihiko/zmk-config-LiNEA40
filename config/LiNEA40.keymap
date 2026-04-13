@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -179,6 +179,24 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        mod_morph_bracket: mod_morph_bracket_ {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPH_BRACKET";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mod_morph_brace: mod_morph_brace_ {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPH_BRACE";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -261,10 +279,10 @@
 
         SCROLL {
             bindings = <
-&kp ESC   &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                     &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
-&kp HOME  &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &kp END                    &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(ENTER)
-&trans    &trans                  &trans        &trans                   &trans                     &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans    &trans                  &trans        &trans                   &trans   &trans    &trans  &kp LA(GRAVE)                  &kp NUMBER_0  &kp DOT       &kp QUESTION
+&kp ESC   &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &mod_morph_bracket                    &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
+&kp HOME  &kp LEFT_ARROW          &kp DOWN          &kp RIGHT_ARROW          &kp END                               &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(ENTER)
+&trans    &trans                  &mod_morph_brace  &trans                   &trans                                &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans    &trans                  &trans            &trans                   &trans              &trans    &trans  &kp LA(GRAVE)                  &kp NUMBER_0  &kp DOT       &kp QUESTION
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
