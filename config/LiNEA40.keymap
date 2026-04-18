@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -279,10 +279,10 @@
 
         SCROLL {
             bindings = <
-&kp ESC   &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &mod_morph_bracket                    &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DELETE
-&kp HOME  &kp LEFT_ARROW          &kp DOWN          &kp RIGHT_ARROW          &kp END                               &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(ENTER)
-&trans    &trans                  &mod_morph_brace  &trans                   &trans                                &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans    &trans                  &trans            &trans                   &trans              &trans    &trans  &kp LA(GRAVE)                  &kp NUMBER_0  &kp DOT       &kp QUESTION
+&kp ESC   &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW    &kp LC(LG(RIGHT_ARROW))  &trans                               &kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DELETE
+&kp HOME  &kp LEFT_ARROW          &kp DOWN        &kp RIGHT_ARROW          &kp END                              &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(ENTER)
+&trans    &kp LEFT_BRACKET        &kp LEFT_BRACE  &kp RIGHT_BRACE          &kp RIGHT_BRACKET                    &kp UNDER        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&trans    &trans                  &trans          &trans                   &trans             &trans    &trans  &kp LA(GRAVE)                     &kp KP_NUMBER_0  &kp DOT          &kp QUESTION
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
