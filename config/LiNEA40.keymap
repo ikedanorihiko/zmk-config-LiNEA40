@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -251,8 +251,8 @@
             //            >;
 
             bindings = <
-&kp QUESTION    &trans     &kp EQUAL            &kp ASTRK  &kp CARET                        &trans         &kp UNDERSCORE  &kp UP_ARROW     &mod_morph_lp_rp       &kp PERCENT
-&kp AT          &kp SLASH  &kp DOLLAR           &kp APOS   &trans                           &kp HASH       &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS  &kp LS(RET)
+&kp QUESTION    &trans     &kp EQUAL            &kp ASTRK  &kp CARET                        &trans         &kp UNDERSCORE  &kp UP_ARROW     &mod_morph_lp_rp       &kp DEL
+&kp AT          &kp SLASH  &kp DOLLAR           &kp APOS   &kp PERCENT                      &kp HASH       &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS  &kp LS(RET)
 &kp LEFT_SHIFT  &kp EXCL   &td_semicolon_colon  &trans     &kp BACKSLASH                    &kp AMPERSAND  &kp DOWN        &trans           &kp PAGE_UP            &kp RIGHT_SHIFT
 &mkp MB1        &trans     &trans               &trans     &trans         &trans    &trans  &kp LA(GRAVE)                  &kp LA(LEFT)     &kp PAGE_DOWN          &kp LA(RIGHT)
             >;
