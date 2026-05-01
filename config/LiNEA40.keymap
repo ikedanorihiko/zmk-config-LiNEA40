@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -207,9 +207,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        hold_tap_a_ctrl: hold_tap_a_ctrl_ {
+        hold_tap: hold_tap_ {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_A_CTRL";
+            label = "HOLD_TAP";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -231,10 +231,10 @@
             //            >;
 
             bindings = <
-&mod_morph_q_esc          &kp W         &kp E         &kp R    &kp T                                  &kp Y         &kp U  &kp I        &kp O      &mod_morph_bs_p
-&hold_tap_a_ctrl LCTRL A  &kp S         &kp D         &kp F    &kp G                                  &kp H         &kp J  &kp K        &kp L      &lt 5 ENTER
-&mt LEFT_SHIFT Z          &kp X         &kp C         &kp V    &kp B                                  &kp N         &kp M  &kp COMMA    &kp DOT    &mt RIGHT_SHIFT SLASH
-&mkp MB1                  &kp LEFT_ALT  &kp LEFT_GUI  &kp INS  &lt 2 SPACE  &lt 5 TAB    &lt 4 ENTER  &lt 2 DELETE         &lt 6 MINUS  &kp EQUAL  &kp SEMI
+&mod_morph_q_esc   &kp W         &kp E         &kp R    &kp T                                  &kp Y         &kp U  &kp I        &kp O      &mod_morph_bs_p
+&hold_tap LCTRL A  &kp S         &kp D         &kp F    &kp G                                  &kp H         &kp J  &kp K        &kp L      &lt 5 ENTER
+&mt LEFT_SHIFT Z   &kp X         &kp C         &kp V    &kp B                                  &kp N         &kp M  &kp COMMA    &kp DOT    &mt RIGHT_SHIFT SLASH
+&mkp MB1           &kp LEFT_ALT  &kp LEFT_GUI  &kp INS  &lt 2 SPACE  &lt 5 TAB    &lt 4 ENTER  &lt 2 DELETE         &lt 6 MINUS  &kp EQUAL  &kp SEMI
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
