@@ -9,8 +9,8 @@ manifest:
     - name: caksoylar
       url-base: https://github.com/caksoylar
       
-    - name: prospector
-      url-base: https://github.com/t-ogura
+#    - name: prospector
+#      url-base: https://github.com/t-ogura
 
   projects:
     - name: zmk
@@ -24,11 +24,11 @@ manifest:
       remote: caksoylar
       revision: v0.3-branch
 
-  # Add this:
-- name: prospector-zmk-module
-    remote: prospector
-    revision: v2.2.0  # Use v2.0.0 for ZMK ≤0.3 (Zephyr 3.x)
-    path: modules/prospector-zmk-module
+# Add this:
+#- name: prospector-zmk-module
+#    remote: prospector
+#    revision: v2.2.0  # Use v2.0.0 for ZMK ≤0.3 (Zephyr 3.x)
+#    path: modules/prospector-zmk-module
     
   self:
     path: config
