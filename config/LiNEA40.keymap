@@ -15,7 +15,7 @@
 #define SCROLL 5
 #define WIRELESS 6
 
-#define COMBO_TERM 40
+#define COMBO_TERM 200
 
 //mouse cursol
 
