@@ -14,7 +14,6 @@
 #define FUNCTION 4
 #define SCROLL 5
 #define WIRELESS 6
-
 #define COMBO_TERM 200
 
 //mouse cursol
@@ -59,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -112,6 +111,11 @@
         RightClick2 {
             bindings = <&mkp MB2>;
             key-positions = <30 31>;
+        };
+
+        us_kana {
+            bindings = <&none>;
+            key-positions = <11 18>;
         };
     };
 
