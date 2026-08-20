@@ -13,6 +13,8 @@ manifest:
       
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: takamaru-fpv  # <-- Battery level smoothing
+      url-base: https://github.com/takamaru-fpv
       
 #    - name: razilyis
 #      url-base: https://github.com/razilyis
