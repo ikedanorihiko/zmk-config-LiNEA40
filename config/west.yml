@@ -27,7 +27,8 @@ manifest:
     - name: zmk
       remote: cormoran
 #      revision: v0.3-branch+dya
-      revision: e5c9b6915b56801193e359dd9bad4a167ce0d1b8
+#      revision: e5c9b6915b56801193e359dd9bad4a167ce0d1b8
+      revision: v0.3-branch+dya
 #      revision: main
       import: app/west.yml
       
