@@ -10,16 +10,27 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: prospector
       url-base: https://github.com/t-ogura
+      
+    - name: cormoran
+      url-base: https://github.com/cormoran
+      
 #    - name: razilyis
 #      url-base: https://github.com/razilyis
 
 
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.2.1
-      import: app/west.yml
+#    - name: zmk
+#      remote: zmkfirmware
+#      revision: v0.2.1
+#      import: app/west.yml
 
+    - name: zmk
+      remote: cormoran
+#      revision: v0.3-branch+dya
+      revision: e5c9b6915b56801193e359dd9bad4a167ce0d1b8
+#      revision: main
+      import: app/west.yml
+      
 #    - name: zmk
 #      remote: zmkfirmware
 #      revision: main
