@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -100,13 +100,13 @@
         };
 
         layer5 {
-            bindings = <&mo 5>;
+            bindings = <&hold_tap_lt5 5 0>;
             key-positions = <34 23>;
             timeout-ms = <150>;
         };
 
         layer4 {
-            bindings = <&mo 4>;
+            bindings = <&hold_tap_lt4 4 0>;
             key-positions = <34 13>;
             timeout-ms = <150>;
         };
@@ -252,7 +252,7 @@
         hold_tap_lt5: hold_tap_lt5 {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_LT5";
-            bindings = <&kp>, <&kp>;
+            bindings = <&lt>, <&trans>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -264,7 +264,7 @@
         hold_tap_lt4: hold_tap_lt4 {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_LT4";
-            bindings = <&kp>, <&kp>;
+            bindings = <&lt>, <&trans>;
 
             #binding-cells = <2>;
             flavor = "balanced";
