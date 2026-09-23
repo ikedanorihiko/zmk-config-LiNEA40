@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -96,19 +96,19 @@
         toggle_off {
             bindings = <&toggle_mode_off 1>;
             key-positions = <12 13>;
-            timeout-ms = <125>;
+            timeout-ms = <250>;
         };
 
         layer5 {
-            bindings = <&hold_tap_lt5 5 0>;
+            bindings = <&mo 5>;
             key-positions = <34 23>;
-            timeout-ms = <150>;
+            timeout-ms = <250>;
         };
 
         layer4 {
             bindings = <&mo 4>;
             key-positions = <34 13>;
-            timeout-ms = <150>;
+            timeout-ms = <250>;
         };
 
         Right_Click2 {
