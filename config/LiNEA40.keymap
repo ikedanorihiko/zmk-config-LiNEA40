@@ -16,12 +16,6 @@
 #define WIRELESS 6
 #define COMBO_TERM 200
 
-// AML解除追加
-&zip_temp_layer {
-    excluded-positions = <13 30>;
-};
-// AML解除追加
-
 //mouse cursol
 
 &mmv {
@@ -60,13 +54,6 @@
 };
 
 &trackball_listener {
-
-
-// AML解除追加
-    input-processors =
-        <&zip_temp_layer MOUSE 5000>;
-// AML解除追加
-
 
     scroller {
         layers = <SCROLL>;
