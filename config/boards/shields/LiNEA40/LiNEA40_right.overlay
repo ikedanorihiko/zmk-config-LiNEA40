@@ -1,15 +1,5 @@
 #include "LiNEA40.dtsi"
 
-//AML追加設定
-&zip_temp_layer {
-    excluded-positions = <
-        13 // F
-        30 // MB2
-    >;
-};
-//AML追加設定
-
-
 // #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &default_transform {
@@ -80,11 +70,6 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-
-//AML追加設定
-    input-processors = <&zip_temp_layer 1 10000>;
-//AML追加設定
-
 
 };
 
