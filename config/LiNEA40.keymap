@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -224,7 +224,7 @@
             quick-tap-ms = <100>;
         };
 
-        toggle_mode_off: toggle_mode_off {
+        toggle_mode_off: toggle_mode_off_ {
             compatible = "zmk,behavior-toggle-layer";
             label = "TOGGLE_MODE_OFF";
             #binding-cells = <1>;
@@ -243,23 +243,13 @@
             quick-tap-ms = <100>;
         };
 
-        mod_morph_l2_percent: mod_morph_l2_percent {
+        mod_morph_L2_percent: mod_morph_L2_percent_ {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_MORPH_L2_PERCENT";
             bindings = <&kp DELETE>, <&kp PERCENT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };
-
-        hold_tog: hold_tog_ {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&tog>, <&kp>;
-
-            label = "HOLD_TOG";
         };
     };
 
@@ -306,7 +296,7 @@
             //            >;
 
             bindings = <
-&kp QUESTION    &kp DOUBLE_QUOTES  &kp EQUAL            &kp ASTRK  &kp CARET                        &none          &kp UNDERSCORE  &kp UP_ARROW     &mod_morph_lp_rp       &mod_morph_l2_percent
+&kp QUESTION    &kp DOUBLE_QUOTES  &kp EQUAL            &kp ASTRK  &kp CARET                        &none          &kp UNDERSCORE  &kp UP_ARROW     &mod_morph_lp_rp       &mod_morph_L2_percent
 &kp AT          &kp SLASH          &kp DOLLAR           &kp APOS   &kp GRAVE                        &kp HASH       &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_PARENTHESIS  &kp RET
 &kp LEFT_SHIFT  &kp EXCL           &td_semicolon_colon  &kp F10    &kp BACKSLASH                    &kp AMPERSAND  &kp DOWN        &none            &kp PAGE_UP            &kp RIGHT_SHIFT
 &mkp MB1        &trans             &trans               &trans     &trans         &trans    &trans  &kp LA(GRAVE)                  &mkp MB4         &kp PAGE_DOWN          &mkp MB5
