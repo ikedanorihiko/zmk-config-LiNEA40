@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -70,31 +70,37 @@
         Window {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <17 16>;
+            layers = <0>;
         };
 
         Control {
             bindings = <&kp RCTRL>;
             key-positions = <18 17>;
+            layers = <0>;
         };
 
         p {
             bindings = <&kp P>;
             key-positions = <8 9>;
+            layers = <0>;
         };
 
         q {
             bindings = <&kp Q>;
             key-positions = <0 1>;
+            layers = <0>;
         };
 
         layer5 {
             bindings = <&mo 5>;
             key-positions = <34 23>;
+            layers = <0>;
         };
 
         layer4 {
             bindings = <&mo 4>;
             key-positions = <34 13>;
+            layers = <0>;
         };
 
         Right_Click2 {
