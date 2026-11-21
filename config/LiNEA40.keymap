@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -382,7 +382,7 @@
 
         FUNCTION {
             bindings = <
-&trans     &trans  &trans  &trans   &trans                    &kp F1   &kp F2              &mod_morpf_L4_up     &kp F4    &kp F5
+&trans     &trans  &trans  &trans   &trans                    &kp F1   &kp F2              &mod_morpf_L4_up     &kp F4    &mod_morph_l4_bs
 &kp LCTRL  &trans  &trans  &trans   &trans                    &kp F6   &mod_morpf_L4_left  &mod_morph_l4_right  &kp F9    &kp F10
 &trans     &trans  &trans  &kp F10  &trans                    &kp F11  &mod_morpf_L4_down  &trans               &kp UP    &trans
 &trans     &trans  &trans  &trans   &trans  &trans    &trans  &trans                       &kp LEFT             &kp DOWN  &kp RIGHT_ARROW
