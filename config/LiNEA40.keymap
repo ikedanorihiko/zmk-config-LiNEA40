@@ -58,7 +58,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -275,7 +275,7 @@
             bindings = <&kp F3>, <&kp UP_ARROW>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
 
         mod_morpf_L4_left: mod_morpf_L4_left {
@@ -284,7 +284,7 @@
             bindings = <&kp F7>, <&kp LEFT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
 
         mod_morph_l4_right: mod_morph_l4_right {
@@ -293,7 +293,7 @@
             bindings = <&kp F8>, <&kp RIGHT_ARROW>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
 
         mod_morpf_L4_down: mod_morpf_L4_down {
@@ -302,7 +302,7 @@
             bindings = <&kp F12>, <&kp DOWN_ARROW>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
 
         mod_morph_l4_bs: mod_morph_l4_bs {
@@ -311,7 +311,7 @@
             bindings = <&kp F5>, <&kp BACKSPACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
@@ -382,10 +382,10 @@
 
         FUNCTION {
             bindings = <
-&trans     &trans  &trans  &trans          &trans                    &kp F1   &kp F2              &mod_morpf_L4_up     &kp F4    &mod_morph_l4_bs
-&kp LCTRL  &trans  &trans  &kp LEFT_SHIFT  &trans                    &kp F6   &mod_morpf_L4_left  &mod_morph_l4_right  &kp F9    &kp F10
-&trans     &trans  &trans  &kp F10         &trans                    &kp F11  &mod_morpf_L4_down  &trans               &kp UP    &trans
-&trans     &trans  &trans  &trans          &trans  &trans    &trans  &trans                       &kp LEFT             &kp DOWN  &kp RIGHT_ARROW
+&trans          &trans  &trans  &trans     &trans                    &kp F1   &kp F2              &mod_morpf_L4_up     &kp F4    &mod_morph_l4_bs
+&trans          &trans  &trans  &kp LCTRL  &trans                    &kp F6   &mod_morpf_L4_left  &mod_morph_l4_right  &kp F9    &kp F10
+&kp LEFT_SHIFT  &trans  &trans  &kp F10    &trans                    &kp F11  &mod_morpf_L4_down  &trans               &kp UP    &trans
+&trans          &trans  &trans  &trans     &trans  &trans    &trans  &trans                       &kp LEFT             &kp DOWN  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
